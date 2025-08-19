@@ -7,9 +7,12 @@
 </head>
 <body>
     EDITAR TAREA
-    {% for tarea in tareas %}
-        {{ tarea.titulo }}
-        {{ tarea.descripcion }}
-    {% endfor %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">
+            Enviar Tarea
+        </button>
+    </form>
 </body>
 </html>

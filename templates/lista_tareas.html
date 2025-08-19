@@ -6,10 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    lista tareas
+    <h1>
+        LISTA DE TAREAS
+    </h1>
     {% for tarea in tareas %}
-        {{ tarea.titulo }}
-        {{ tarea.descripcion }}
+        <h3>
+            {{ tarea.titulo }}
+        </h3>
+        <p>
+            {{ tarea.descripcion }}
+        </p>
     {% endfor %}
 </body>
 </html>
